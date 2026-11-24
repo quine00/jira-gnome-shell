@@ -1,0 +1,8 @@
+{
+  "uuid": "jira-sprint@charles.local",
+  "name": "Jira Sprint",
+  "description": "Drop-down showing your Jira sprint: read tickets, move them, without the web UI.",
+  "shell-version": ["51"],
+  "settings-schema": "org.gnome.shell.extensions.jira-sprint",
+  "version": 1
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <enum id="org.gnome.shell.extensions.jira-sprint.View">
+    <value value="0" nick="mine"/>
+    <value value="1" nick="team"/>
+    <value value="2" nick="backlog"/>
+  </enum>
+  <schema id="org.gnome.shell.extensions.jira-sprint"
+          path="/org/gnome/shell/extensions/jira-sprint/">
+    <key name="toggle-dropdown" type="as">
+      <default>["&lt;Super&gt;j"]</default>
+      <summary>Toggle the sprint drop-down</summary>
+    </key>
+    <key name="view" enum="org.gnome.shell.extensions.jira-sprint.View">
+      <default>"mine"</default>
+      <summary>Which tickets the drop-down lists</summary>
+    </key>
+    <key name="team-id" type="s">
+      <default>""</default>
+      <summary>Jira Team id used by the team and backlog views</summary>
+    </key>
+    <key name="rbw-item" type="s">
+      <default>"jira api key"</default>
+      <summary>Bitwarden item holding the Jira API token</summary>
+    </key>
+    <key name="sync-interval" type="u">
+      <default>300</default>
+      <summary>Seconds between background refreshes</summary>
+    </key>
+  </schema>
+</schemalist>
